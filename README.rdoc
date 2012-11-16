@@ -1,0 +1,8 @@
+
+me = User.create(:email=>"myemail", :password=>"password")
+re = Role.create(:title => 'Refinery')
+su = Role.create(:title => 'Superuser')
+
+me.roles << re
+me.roles << su
+me.save
